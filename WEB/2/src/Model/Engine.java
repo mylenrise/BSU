@@ -37,7 +37,7 @@ public class Engine extends Spare {
      * @param cylinders cylinders component of Engine
      */
 
-    public Engine(String name, int price, String company, int cylinders){
+    public Engine(String name, float price, String company, int cylinders){
         setName(name);
         setPrice(price);
         setCompany(company);
@@ -55,6 +55,8 @@ public class Engine extends Spare {
      * Converts Engine object to string
      * @return the engine as string
      */
+
+
     @Override
     public String toString(){
         return "(Name: "+name + ", Company: " + company + ", Amount of cylindres: "+cylinders+", Price: "+price+")";

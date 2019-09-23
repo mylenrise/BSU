@@ -59,7 +59,7 @@ public class BrakePads extends Spare {
      * @param width component of BrakePads
      */
 
-    public BrakePads(String name, int price, String company, int length, int width, int height){
+    public BrakePads(String name, float price, String company, int length, int width, int height){
         setName(name);
         setPrice(price);
         setCompany(company);

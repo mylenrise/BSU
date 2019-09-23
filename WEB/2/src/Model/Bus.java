@@ -38,7 +38,7 @@ public class Bus extends Spare {
      * @param isStudded isStudded component of Bus
      */
 
-    public Bus(String name, int price, String company, boolean isStudded) {
+    public Bus(String name, float price, String company, boolean isStudded) {
         setName(name);
         setPrice(price);
         setCompany(company);
