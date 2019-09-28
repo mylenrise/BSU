@@ -51,8 +51,29 @@ public abstract class Spare implements StoreSpare {
         this.price *= (1 + val / 100);
     }
 
+    /**
+     * Get price
+     * @return price
+     */
     public double getPrice(){
         return price;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : 2);
+        result = prime * result + 23; result = prime * result +
+                ((price == 0) ? 0 : 4); return result;
     }
 
 

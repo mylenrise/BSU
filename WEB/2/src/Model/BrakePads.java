@@ -68,6 +68,13 @@ public class BrakePads extends Spare {
         setWidth(width);
     }
     /**
+     * Get copy of object
+     * @return new object with same fields
+     */
+    public StoreSpare getCopy(){
+        return new BrakePads(name,price,company,length,width,height);
+    }
+    /**
      * Defines spare type
      */
     public void getSpare(){

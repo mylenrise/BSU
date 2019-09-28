@@ -45,6 +45,13 @@ public class Engine extends Spare {
     }
 
     /**
+     * Get copy of object
+     * @return new object with same fields
+     */
+    public StoreSpare getCopy(){
+        return new Engine(name,price,company,cylinders);
+    }
+    /**
      * Defines spare type
      */
     public void getSpare(){

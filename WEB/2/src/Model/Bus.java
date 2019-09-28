@@ -44,6 +44,13 @@ public class Bus extends Spare {
         setCompany(company);
         setIsStudded(isStudded);
     }
+    /**
+     * Get copy of object
+     * @return new object with same fields
+     */
+    public StoreSpare getCopy(){
+        return new Bus(name,price,company,isStudded);
+    }
 
     /**
      * Defines spare type
@@ -59,4 +66,8 @@ public class Bus extends Spare {
     public String toString(){
         return "(Name: "+name + ", Company: " + company + ", Studded: "+(isStudded?"Yes":"No")+", Price: "+price+")";
     }
+
+
+
+
 }
